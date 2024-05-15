@@ -1,0 +1,236 @@
+*{
+    margin: 0px;
+    padding: 0%;
+    font-family: sans-serif;
+}
+body {
+    animation: animateWebsite 1s ease-in-out;
+  }
+  
+@keyframes animateWebsite {
+    0% {
+      transform: translateY(-100%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+}
+footer {
+	background-color: #333;
+	padding: 20px;
+	text-align: center;
+}
+
+.footer-content {
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+.social-links {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+    text-align: center;
+    margin-top: 20px;
+
+}
+
+
+.social-links a {
+	text-decoration: none;
+    display: inline-block;
+    border-radius: 50px;
+
+
+}
+
+.social-links a:hover {
+	color:wheat; /* orange text */
+    background-color: #4c4040;
+}
+
+.social-links  img {
+    width: 40px 20px ;
+    padding: auto;
+    padding-left: 10px;
+    height: 30px ;
+}
+
+.name {
+	font-weight: bold;
+}
+  
+.hero{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: white;
+}
+nav{
+    display: flex;
+    width: 84%;
+    margin: auto;
+    padding: 20px 0px;
+    align-items: center;
+    justify-content: space-between;
+}
+nav ul li{
+    display: inline;
+    list-style: none;
+    margin-top: 20px 10px;
+    padding-right: 20px;
+}
+.logo{
+    height: 60px;
+    width: 60px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+nav ul li a:hover{
+    color: silver;
+}
+.cont{
+    margin-top: 15%;
+    margin-left: 8%;
+
+}
+.cont h1{
+    font-size: 50px;
+    color: #212121;
+    margin-bottom: 20px;
+}
+span{
+    color: #ff7709;
+}
+.cont p{
+    color: #555;
+    line-height: 22px;
+}
+.cont a{
+    background: #212121;
+    padding: 10px 18px;
+    text-decoration: none;
+    font-weight: bold;
+    color: beige;
+    display: inline-block;
+    margin: 30px 0px;
+    border-radius: 5px;
+}
+
+.images{
+    width: 45%;
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+}
+.images img{
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-35%);
+    transition: bottom 1s, left 1s;
+}
+.images{
+    animation: animate-image 2s ease-in-out; /* Adjust duration and timing as needed */
+    transition: transform 0.8s i;
+}
+
+@keyframes animate-image {
+  from { opacity: 0; transform: translatex(40px); } /* Image starts hidden and slightly down */
+  to { opacity: 1; transform: translateY(0); } /* Animate to full opacity and original position */
+  
+}
+        /* Basic styling for the page */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #333;
+        }
+        p {
+            color: #666;
+        }
+        /* Center the text within the container */
+        .center-text {
+            text-align: center;
+        }
+        /* Add more styles as needed */
+
+/* porfolio website */
+
+.projects-section {
+	background-color: #f7f7f7;
+	padding: 40px;
+}
+
+.projects-grid {
+	display: inline;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 20px;
+}
+
+.project {
+	background-color: #fff;
+	padding: 20px;
+	border: 1px solid #ddd;
+}
+
+.project img {
+	width: 100%;
+	height: 10%;
+	object-fit: cover;
+	border-radius: 10px;
+}
+
+.project h2 {
+	margin-top: 0;
+}
+
+.project p {
+	margin-bottom: 20px;
+}
+
+.btn {
+	background-color: #ffa07a; /* orange button */
+	color: #fff;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 10px;
+	cursor: pointer;
+}
+
+.services-section {
+	background-color: #fff;
+	padding: 20px;
+	border: 1px solid #ddd;
+}
+
+.services-section h2 {
+	margin-top: 0;
+}
+
+.services-section ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.services-section li {
+	margin-bottom: 10px;
+}
