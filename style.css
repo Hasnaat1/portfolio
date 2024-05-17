@@ -15,14 +15,19 @@ body {
       transform: translateY(0);
     }
 }
+/* Footer */
 footer {
-	background-color: #333;
-	padding: 20px;
-	text-align: center;
+    position: flex;
+    bottom: 0;
+    width: 100%;
+    padding-top: 10px;
+    background-color: #333;
+    color: #fff;
+    align-items: end;
+    text-align: center;
 }
 
 .footer-content {
-	max-width: 800px;
 	margin: 0 auto;
 }
 
@@ -59,7 +64,7 @@ footer {
 .name {
 	font-weight: bold;
 }
-  
+/* Body */
 .hero{
     position: relative;
     width: 100%;
