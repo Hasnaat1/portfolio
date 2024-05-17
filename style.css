@@ -150,6 +150,12 @@ span{
   to { opacity: 1; transform: translateY(0); } /* Animate to full opacity and original position */
   
 }
+  @media (max-width: 768px) {
+    .images img {
+      width: 0%;
+      height: 0;
+    }
+  }
         /* Basic styling for the page */
         body {
             font-family: Arial, sans-serif;
