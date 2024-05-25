@@ -1,4 +1,4 @@
-*{
+* {
   margin: 0px;
   padding: 0%;
   font-family: sans-serif;
@@ -17,59 +17,69 @@ body {
 }
 
 .name {
-font-weight: bold;
+  font-weight: bold;
 }
-.hero{
+.hero {
   position: relative;
   width: 100%;
   height: 100vh;
   background: white;
 }
-nav{
-  display: flex;
-  width: 84%;
+nav {
+  width: 100%;
   margin: auto;
-  padding: 20px 0px;
   align-items: center;
   justify-content: space-between;
+  display: flex;
+  background-color: #333;
+  padding: 10px;
+}
+.nav-bar ul {
+  list-style-type: none;
+  padding-right: 40px;
+  margin-right: 50px;
+  display: flex;
 }
 
-nav ul li{
+nav ul li {
   display: inline;
   list-style: none;
   margin-top: 20px 10px;
-  padding-right: 20px;
+  padding: 14px 20px;
 }
-.logo{
+.logo {
   height: 60px;
   width: 60px;
+  align-items: center;
+  position: relative;
+  margin-left: 80px;
 }
-nav ul li a{
+nav ul li a {
   text-decoration: none;
-  color: black;
   font-weight: bold;
+  color: white;
+  display: block;
 }
-nav ul li a:hover{
+nav ul li a:hover {
   color: orange;
 }
-.cont{
-  margin-top: 17%;
+.cont {
+  margin-top: 18%;
   margin-left: 8%;
-
 }
-.cont h1{
+.cont h1 {
   font-size: 50px;
   color: #212121;
   margin-bottom: 20px;
 }
-span{
+span {
   color: #ff7709;
 }
-.cont p{
+.cont p {
   color: #555;
   line-height: 22px;
 }
-.cont a{
+.cont a {
   background: #212121;
   padding: 10px 18px;
   text-decoration: none;
@@ -80,58 +90,63 @@ span{
   border-radius: 5px;
 }
 
-.images{
+.images {
   width: 45%;
   height: 80%;
   position: absolute;
   right: 200px;
   bottom: 0;
 }
-.images img{
+.images img {
   position: absolute;
   left: 60%;
   bottom: 0;
   transform: translateX(-35%);
   transition: bottom 1s, left 1s;
 }
-.images{
+.images {
   animation: animate-image 2s ease-in-out; /* Adjust duration and timing as needed */
   transition: transform 0.8s i;
 }
 
 @keyframes animate-image {
-from { opacity: 0; transform: translatex(40px); } /* Image starts hidden and slightly down */
-to { opacity: 1; transform: translateY(0); } /* Animate to full opacity and original position */
-
+  from {
+    opacity: 0;
+    transform: translatex(40px);
+  } /* Image starts hidden and slightly down */
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  } /* Animate to full opacity and original position */
 }
 @media (max-width: 768px) {
   .images img {
     width: 0%;
     height: 0;
-    position: relative;    
-}
+    position: relative;
+  }
 }
 .container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #ffffff;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 h1 {
-    color: #333;
+  color: #333;
 }
 p {
-    color: #666;
+  color: #666;
 }
 /* Center the text within the container */
 .center-text {
-    text-align: center;
+  text-align: center;
 }
 /* Footer */
 footer {
-  position: flexbox;
+  position: relative;
   bottom: 0;
   right: 0;
   width: 100%;
@@ -149,94 +164,184 @@ footer {
 }
 
 .social-links {
-list-style: none;
-margin: 0;
-padding: 0;
-text-align: center;
-margin-top: 20px;
-
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  margin-top: 20px;
 }
 
-
 .social-links a {
-text-decoration: none;
+  text-decoration: none;
   display: inline-block;
   border-radius: 50px;
-
-
 }
 
 .social-links a:hover {
-color:wheat; /* orange text */
+  color: wheat; /* orange text */
   background-color: #4c4040;
 }
 
-.social-links  img {
-  width: 40px 20px ;
+.social-links img {
+  width: 40px 20px;
   padding: auto;
   padding-left: 10px;
-  height: 30px ;
+  height: 30px;
 }
 /* porfolio website */
 
 .projects-section {
-background-color: #f7f7f7;
-padding: 40px 0 0;
+  background-color: #f7f7f7;
+  padding: 40px 0 0;
 }
 
-
 .projects-grid {
-display: inline;
-grid-template-columns: repeat(3, 1fr);
-grid-gap: 20px;
+  display: inline;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
 }
 
 .project {
-background-color: #fff;
-padding: 20px;
-border: 1px solid #ddd;
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ddd;
 }
 
 .project img {
-width: 100%;
-height: 10%;
-object-fit: cover;
-border-radius: 10px;
+  width: 100%;
+  height: 10%;
+  object-fit: cover;
+  border-radius: 10px;
 }
 
 .project h2 {
-margin-top: 0;
+  margin-top: 0;
 }
 
 .project p {
-margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .btn {
-background-color: #ffa07a; /* orange button */
-color: #fff;
-padding: 10px 20px;
-border: none;
-border-radius: 10px;
-cursor: pointer;
+  background-color: #ffa07a; /* orange button */
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
 }
 
 .services-section {
-background-color: #fff;
-padding: 20px;
-border: 1px solid #ddd;
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ddd;
 }
 
 .services-section h2 {
-margin-top: 0;
+  margin-top: 0;
 }
 
 .services-section ul {
-list-style: none;
-margin: 0;
-padding: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .services-section li {
-margin-bottom: 10px;
+  margin-bottom: 10px;
+}
+/* For nav bar */
+
+.icon {
+  display: none;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-bar ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+  .nav-bar ul li {
+    text-align: center;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+  }
+  .icon {
+    display: block;
+    color: white;
+    font-size: 24px;
+    padding-right: 40px;
+  }
+  .logo {
+    padding: auto;
+    margin-left: 20px;
+  }
+  .nav-bar.responsive ul {
+    display: flex;
+  }
+}
+/* About */
+
+.about-me {
+	max-width: 100%;
+	margin: 40px auto;
+	padding: 20px;
+	background-color: #fff;
+}
+
+.name {
+	font-weight: bold;
+	color: #d75013; /* orange text */
+}
+
+.what-i-do ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.what-i-do li {
+	margin-bottom: 20px;
+}
+
+.what-i-do h3 {
+	margin-top: 0;
+}
+
+.my-journey {
+	margin-bottom: 40px;
+}
+
+.what-inspires-me ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.what-inspires-me li {
+	margin-bottom: 20px;
+}
+
+.what-inspires-me h3 {
+	margin-top: 0;
+}
+
+.lets-connect {
+	margin-bottom: 40px;
+}
+
+/* Add some orange color to the page */
+.name {
+	font-weight: bold;
+	color: #d75013; /* orange text */
+}
+
+.what-i-do h3 {
+	color: #d75013; /* orange text */
+}
+
+.what-inspires-me h3 {
+	color: #d75013; /* orange text */
 }
