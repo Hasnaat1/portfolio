@@ -64,7 +64,7 @@ nav ul li a:hover {
   color: orange;
 }
 .cont {
-  margin-top: 18%;
+  margin-top: 12%;
   margin-left: 8%;
 }
 .cont h1 {
@@ -91,14 +91,14 @@ span {
 }
 
 .images {
-  width: 45%;
+  width: 35%;
   height: 80%;
   position: absolute;
   right: 200px;
   bottom: 0;
 }
 .images img {
-  position: absolute;
+  position: relative;
   left: 60%;
   bottom: 0;
   transform: translateX(-35%);
