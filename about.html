@@ -74,13 +74,20 @@
 <body>
     <div class="hero" id="website-content">
         <nav>
-           <a href="index.html" target="_blank" rel="noopener noreferrer"><img src="images/simple_h_logo_in_orange_color_more_for_portfolio_website-removebg-preview.png" class="logo"></a>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="about.html">About Me</a></li>
-                <li><a href="contact.html">Contact Me</a></li>
-            </ul>
+            <a href="index.html" target="_blank" rel="noopener noreferrer">
+                <img src="images/simple_h_logo_in_orange_color_more_for_portfolio_website-removebg-preview.png" class="logo">
+            </a>
+            <div class="nav-bar" id="navLinks">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="contact.html">Contact Me</a></li>
+                </ul>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="toggleNav()">
+                <i class="fa fa-bars">☰</i>
+            </a>
         </nav>
         	<!--About(start)-->
 	<table id="about" border="0" width="100%"
@@ -153,9 +160,7 @@
                     </section>
                 </section>
             </main>
-            <hr color="black">
-            <hr color="black">
-            <hr color="black">
+
         </td>
     </tr>
 </table>
@@ -172,4 +177,7 @@
                 <a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram"><img src="images/R-removebg-preview.png" alt=""></i></a>
             </div>
         </div>
+
     </footer>
+    <script src="script.js"></script>
+
